@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background-image: url("../assets/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container with glass effect + fade-in animation */
+.login-container {
+  margin-right: 10%;
+  margin-top: 6%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+   padding: 20px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Animation */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Wrapper for icon + input */
+/* Flexbox wrapper: icon + input side by side */
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* padding: 0 12px; inside spacing */
+  transition: all 0.3s ease;
+}
+
+.input-with-icon i {
+  color: #009ea6;
+  font-size: 18px;
+  margin: 10px; /* space between icon & input text */
+}
+
+.input-with-icon input {
+  flex: 1;
+  padding: 12px 8px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  color: #222;
+  text-align: right; /* RTL */
+}
+
+/* Hover + focus effect */
+.input-with-icon:focus-within {
+  border-color: #009ea6;
+  box-shadow: 0 0 8px rgba(0, 158, 166, 0.5);
+  transform: scale(1.02);
+}
+
+
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #009ea6;
+  text-align: center;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.input-group {
+  margin-bottom: 18px;
+  text-align: right;
+  display: block !important;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #009ea6;
+  box-shadow: 0 0 8px rgba(0, 158, 166, 0.5);
+  transform: scale(1.02);
+}
+
+/* Button with smooth hover animation */
+.custom-button {
+  background: #009ea6;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.custom-button:hover {
+  background: linear-gradient(135deg, #385472, #009ea6);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+.extra-links {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #444;
+}
+
+.extra-links a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}

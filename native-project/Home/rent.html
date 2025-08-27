@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عقارات للايجار</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/rent.css" />
+
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body dir="rtl">
+    <!-- Navbar -->
+    <nav class="custom-navbar">
+      <!-- Logo -->
+      <a class="navbar-brand" href="home.html">
+        <img src="../assets/logo.png" alt="Logo" class="navbar-logo" />
+      </a>
+
+      <!-- Links -->
+      <div class="nav-links">
+        <a class="nav-link" href="home.html">الرئيسية</a>
+        <a class="nav-link" href="about.html">من نحن</a>
+        <a class="nav-link " href="news.html">عقارات للبيع</a>
+        <a class="nav-link active" href="rent.html">عقارات للإيجار</a>
+        <a class="nav-link" href="sell.html">طلب بيع عقار</a>
+        <a class="nav-link" href="buy.html">طلب شراء أراضي</a>
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </div>
+
+      <!-- Login -->
+      <div class="nav-actions">
+        <a href="login.html" class="custom-button">
+          <i class="fa-solid fa-user user-icon"></i> تسجيل الدخول
+        </a>
+      </div>
+    </nav>
+
+    <!-- ✅ المكان اللي هيتحط فيه كروت العقارات -->
+    <main class="container">
+      <h2 class="section-subtitle mb-4">عقارات للإيجار</h2>
+      <div class="row" id="rent-cards"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footerContainer">
+      <div class="container">
+        <div class="top">
+          <!-- Logo + Social -->
+          <div class="footer-logo-section">
+            <img
+              src="../assets/footerlogo.png"
+              alt="footerlogo"
+              class="footer-logo"
+            />
+            <p class="footer-description">
+              مؤسسة تسويق ووساطة عقارية لها خبرة في المجال العقاري لدينا ما يربو
+              على 13 شهادة معتمدة معتمدة من المعهد العقاري خدماتنا تشمل التسويق
+              والوساطة واداره املاك وتوثيق عقود ايحابية
+            </p>
+            <div class="social-icons">
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://telegram.org"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fas fa-bell"></i></a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="footer-pages">
+            <h3>صفحات الموقع</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="about.html">من نحن</a></li>
+              <li><a href="news.html">العقارات</a></li>
+              <li><a href="contact.html">تواصل معنا</a></li>
+              <li><a href="login.html">إنشاء حساب</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-quick-links">
+            <h3>روابط سريعة</h3>
+            <ul class="footer-links">
+              <li><a href="privacy.html">سياسة الخصوصية</a></li>
+              <li><a href="sale.html">عقارات للبيع</a></li>
+              <li><a href="rent.html">عقارات للإيجار</a></li>
+              <li><a href="sell.html">طلب بيع عقار</a></li>
+              <li><a href="buy.html">طلب شراء أراضي</a></li>
+            </ul>
+          </div>
+
+          <!-- Form CTA -->
+          <div class="footer-form">
+            <img src="../assets/footer.png" alt="footer" class="footer-image" />
+            <h2>تريد بيع أو شراء عقار ؟</h2>
+            <p>نحن هنا لمساعدتك</p>
+            <a href="contact.html" class="btn">تواصل معنا</a>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>العقارية SFM جميع الحقوق محفوظة 2025 &copy;</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Js/rent.js"></script>
+  </body>
+</html>

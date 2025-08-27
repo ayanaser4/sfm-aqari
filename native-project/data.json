@@ -1,0 +1,127 @@
+
+{
+  "selling": [
+    {
+      "id": 1,
+      "title": "فيلا الندى",
+      "location": "حي الندى شرق الرياض",
+      "price": "3,500,000",
+      "area": 600,
+      "rooms": 6,
+      "baths": 5,
+      "image": "../public/1.jpg"
+    },
+    {
+      "id": 2,
+      "title":" فيلا الندى",
+      "location": "حي الياسمين الرياض",
+      "price": "750,000",
+      "area": 180,
+      "rooms": 3,
+      "baths": 2,
+      "image": "../public/2.jpeg"
+    },
+    {
+      "id": 3,
+      "title":" فيلا الندى",
+      "location": "حي النرجس شمال الرياض",
+      "price": "2,100,000",
+      "area": 520,
+      "rooms": 5,
+      "baths": 4,
+      "image": "../public/3.avif"
+    },
+    {
+      "id": 4,
+      "title":" فيلا الندى",
+      "location": "حي الازدهار الرياض",
+      "price": "90,000 / سنوي",
+      "area": 200,
+      "rooms": 3,
+      "baths": 3,
+      "image": "../public/4.jpg"
+    },
+    {
+      "id": 5,
+      "title":" فيلا الندى",
+      "location": "حي النخيل الرياض",
+      "price": "150,000 / سنوي",
+      "area": 400,
+      "rooms": 5,
+      "baths": 4,
+      "image": "../public/5.jpg"
+    },{
+      "id": 6,
+      "title":" فيلا الندى",
+      "location": "حي الياسمين الرياض",
+      "price": "60,000 / سنوي",
+      "area": 120,
+      "rooms": 2,
+      "baths": 2,
+      "image": "../public/6.jpg"
+
+    }
+  ],
+  "rent": [
+    {
+      "id": 7,
+      "title":" فيلا الندى",
+      "location": "حي الياسمين الرياض",
+      "price": "60,000 / سنوي",
+      "area": 120,
+      "rooms": 2,
+      "baths": 2,
+      "image": "../public/7.avif"
+    },
+    {
+      "id": 8,
+      "title":" فيلا الندى",
+      "location": "حي النخيل الرياض",
+      "price": "150,000 / سنوي",
+      "area": 400,
+      "rooms": 5,
+      "baths": 4,
+      "image": "../public/8.webp"
+    },
+    {
+      "id": 9,
+      "title":" فيلا الندى",
+      "location": "حي الازدهار الرياض",
+      "price": "90,000 / سنوي",
+      "area": 200,
+      "rooms": 3,
+      "baths": 3,
+      "image": "../public/9.webp"
+    }
+    ,{
+      "id": 10,
+      "title":" فيلا الندى",
+      "location": "حي النرجس شمال الرياض",
+      "price": "2,100,000",
+      "area": 520,
+      "rooms": 5,
+      "baths": 4,
+      "image": "../public/10.jpg"
+    },{
+      "id": 11,
+      "title":" فيلا الندى",
+      "location": "حي الندى شرق الرياض",
+      "price": "3,500,000",
+      "area": 600,
+      "rooms": 6,
+      "baths": 5,
+      "image": "../public/11.avif"
+    },{
+      "id": 12,
+      "title":" فيلا الندى",
+      "location": "حي الياسمين الرياض",
+      "price": "750,000",
+      "area": 180,
+      "rooms": 3,
+      "baths": 2,
+      "image": "../public/12.jpg"
+    }
+ 
+
+  ]
+}
