@@ -1,7 +1,7 @@
 /* ---------------- Contact Section ---------------- */
 .contact {
   width: 100%;
-  padding: 6% 20px 20px; /* ↓ smaller padding */
+  padding: 6% 30px 10px; /* ↓ smaller padding */
   box-sizing: border-box;
 }
 
