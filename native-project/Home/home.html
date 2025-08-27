@@ -36,7 +36,7 @@
         <a class="nav-link" href="rent.html">عقارات للإيجار</a>
         <a class="nav-link" href="sell.html">طلب بيع عقار</a>
         <a class="nav-link" href="buy.html">طلب شراء أراضي</a>
-        <a class="nav-link" href="contact.html">تواصل معنا</a>
+        <a class="nav-link" href="contactus.html">تواصل معنا</a>
       </div>
 
       <!-- Login -->
@@ -187,36 +187,41 @@
 
     <!-- Properties Section -->
     <section class="container my-5">
-     <div class="first">
-       <h2 class="section-subtitle mb-4">عقارات للبيع</h2>
-      <div class="row" id="selling-cards"></div>
-      <button class="about-btn" onclick="location.href='news.html'">المزيد عنا </button>
-     </div>
-      
+      <div class="first">
+        <h2 class="section-subtitle mb-4">عقارات للبيع</h2>
+        <div class="row" id="selling-cards"></div>
+        <button class="about-btn" onclick="location.href='news.html'">
+          المزيد عنا
+        </button>
+      </div>
 
       <div class="secound">
         <h2 class="section-subtitle mt-5 mb-4">عقارات للإيجار</h2>
-      <div class="row" id="rent-cards"></div>
-      <button class="about-btn" onclick="location.href='rent.html'">المزيد عنا </button>
+        <div class="row" id="rent-cards"></div>
+        <button class="about-btn" onclick="location.href='rent.html'">
+          المزيد عنا
+        </button>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contactus-container">
       <div class="contactus-top text-center">
-        <a href="contact.html" class="btn">تواصل معنا</a>
+        <a href="contactus.html" class="btn">تواصل معنا</a>
         <h2>نحن هنا لمساعدتك</h2>
         <p>هل تبحث عن منزل أحلامك؟ تواصل معنا الآن.</p>
       </div>
 
       <div class="contactus-bottom">
         <!-- Form -->
+        <!-- Form -->
         <div class="contactus-right">
           <h2>ارسل لنا رسالة</h2>
-          <form class="contact-form">
+          <form class="contact-form" id="contactForm">
             <label>الاسم بالكامل</label>
             <input
               type="text"
+              id="fullname"
               class="form-control"
               placeholder="الاسم بالكامل"
               required
@@ -224,12 +229,14 @@
             <label>البريد الإلكتروني</label>
             <input
               type="email"
+              id="email"
               class="form-control"
               placeholder="البريد الإلكتروني"
             />
             <label>رقم الجوال</label>
             <input
               type="tel"
+              id="phone"
               class="form-control"
               placeholder="رقم الجوال"
               required
@@ -237,6 +244,7 @@
             <label>كيف يمكننا مساعدتك؟</label>
             <textarea
               rows="3"
+              id="message"
               class="form-control"
               placeholder="كيف يمكننا مساعدتك؟"
               required
@@ -244,6 +252,7 @@
             <button type="submit" class="send-btn mt-3">إرسال الرسالة</button>
           </form>
         </div>
+
 
         <!-- Info -->
         <div class="contactus-left">
@@ -306,11 +315,11 @@
           <div class="footer-pages">
             <h3>صفحات الموقع</h3>
             <ul class="footer-links">
-              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="home.html">الرئيسية</a></li>
               <li><a href="about.html">من نحن</a></li>
               <li><a href="news.html">العقارات</a></li>
-              <li><a href="contact.html">تواصل معنا</a></li>
-              <li><a href="login.html">إنشاء حساب</a></li>
+              <li><a href="contactus.html">تواصل معنا</a></li>
+              <li><a href="register.html">إنشاء حساب</a></li>
             </ul>
           </div>
 
@@ -318,7 +327,7 @@
             <h3>روابط سريعة</h3>
             <ul class="footer-links">
               <li><a href="privacy.html">سياسة الخصوصية</a></li>
-              <li><a href="sale.html">عقارات للبيع</a></li>
+              <li><a href="news.html">عقارات للبيع</a></li>
               <li><a href="rent.html">عقارات للإيجار</a></li>
               <li><a href="sell.html">طلب بيع عقار</a></li>
               <li><a href="buy.html">طلب شراء أراضي</a></li>

@@ -119,7 +119,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly; /* يخلي الفورم يسار والمحتوى يمين */
-  gap: 40px;
+  /* gap: 40px; */
   padding: 0 60px;
   position: relative;
   direction: rtl; /* RTL مناسب للعربية */

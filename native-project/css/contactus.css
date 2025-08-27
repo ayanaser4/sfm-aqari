@@ -1,0 +1,129 @@
+/* ---------------- Contact Section ---------------- */
+.contact {
+  width: 100%;
+  padding: 6% 20px 20px; /* ↓ smaller padding */
+  box-sizing: border-box;
+}
+
+/* Right Side (Form) */
+.contactus-right {
+  background: var(--secondary-bg, #e0e2e123);
+  border-radius: 12px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.contact-title {
+  font-size: 28px; /* ↓ slightly smaller */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contact-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 18px; /* ↓ smaller margin */
+  line-height: 1.6;
+}
+
+/* Form Styles */
+.contactus-right label {
+  font-weight: 600;
+  margin-bottom: 3px; /* ↓ tighter label spacing */
+  display: block;
+  color: #333;
+}
+
+.contactus-right .form-control {
+  margin-bottom: 12px; /* ↓ smaller spacing between inputs */
+  border-radius: 6px;
+  padding: 8px 10px; /* ↓ less input height */
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+
+/* Left Side (Image) */
+.contact-image {
+  width: 100%;
+  max-width: 350px; /* ↓ smaller image */
+  border-radius: 12px;
+  box-shadow: 0 12px 25px #245e6079;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-image:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typing Animation */
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4.5s steps(35, end) forwards, blink 0.8s step-end infinite;
+}
+
+/* Slower, smoother typing */
+@keyframes typing {
+  from { width: 0 }
+  to   { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Subtitle Fade In */
+.typing-subtitle {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 992px) {
+  .contactus-right {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .contact-image {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+}
+/* Submit Button */
+.send-btn {
+  cursor: pointer;
+  animation: smoothBounce 2s ease-in-out infinite; /* 👈 smoother bounce */
+  transition: transform 0.5s ease-in-out, background 0.3s;
+}
+
+/* Smooth Bounce Animation */
+@keyframes smoothBounce {
+  0%, 100% {
+    transform: translateY(0) ;
+  }
+  30% {
+    transform: translateY(-10px) ; /* lift + grow */
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-6px); /* smaller bounce */
+  }
+}
+

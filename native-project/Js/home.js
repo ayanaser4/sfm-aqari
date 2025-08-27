@@ -62,15 +62,36 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
 
-      data.selling.slice(0, 3).forEach(
-        (item) => (sellingContainer.innerHTML += createCard(item, "sell"))
-      );
-      data.rent.slice(0, 3).forEach(
-        (item) => (rentContainer.innerHTML += createCard(item, "rent"))
-      );
+      data.selling
+        .slice(0, 3)
+        .forEach(
+          (item) => (sellingContainer.innerHTML += createCard(item, "sell"))
+        );
+      data.rent
+        .slice(0, 3)
+        .forEach(
+          (item) => (rentContainer.innerHTML += createCard(item, "rent"))
+        );
     } catch (error) {
       console.error("خطأ في تحميل البيانات:", error);
     }
   }
   loadData();
+  
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault(); // منع إعادة تحميل الصفحة
+
+      // اجمع البيانات من الحقول
+      const formData = {
+        fullname: document.getElementById("fullname").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value,
+      };
+
+      // اطبع البيانات في الـ console
+      console.log("بيانات النموذج:", formData);
+    });
 });
