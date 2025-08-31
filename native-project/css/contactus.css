@@ -43,7 +43,6 @@
   transition: 0.3s;
 }
 
-
 /* Left Side (Image) */
 .contact-image {
   width: 100%;
@@ -59,8 +58,14 @@
 
 /* ---------------- Animations ---------------- */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Typing Animation */
@@ -73,12 +78,18 @@
 
 /* Slower, smoother typing */
 @keyframes typing {
-  from { width: 0 }
-  to   { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* Subtitle Fade In */
@@ -89,8 +100,14 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ---------------- Responsive ---------------- */
@@ -113,11 +130,12 @@
 
 /* Smooth Bounce Animation */
 @keyframes smoothBounce {
-  0%, 100% {
-    transform: translateY(0) ;
+  0%,
+  100% {
+    transform: translateY(0);
   }
   30% {
-    transform: translateY(-10px) ; /* lift + grow */
+    transform: translateY(-10px); /* lift + grow */
   }
   50% {
     transform: translateY(0);
@@ -126,4 +144,65 @@
     transform: translateY(-6px); /* smaller bounce */
   }
 }
+.contact-info {
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin: 40px auto;
+  max-width: 1100px;
+  flex-direction: row !important;
+  gap: 20px;
+}
 
+.info-box {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+  transition: transform 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+}
+
+.info-box h1 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin: 15px 0 10px;
+}
+
+.info-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* أيقونات */
+.info-icon {
+  font-size: 40px;
+  color: var(--primary-color, #245e60); /* أزرق أنيق */
+  margin-bottom: 10px;
+}
+.para {
+  max-width: 800px; /* عرض مناسب للنص */
+  margin: 40px auto; /* يخلي الديف في النص */
+  text-align: center; /* النص في المنتصف */
+  background: #fff; /* خلفية بيضاء */
+  padding: 20px 30px;
+  border-radius: 12px; /* زوايا ناعمة */
+}
+
+.para p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.para span {
+  font-weight: bold; /* يخلي الـ span بولد */
+  color: #2c3e50; /* لون مميز */
+  font-size: 24px;
+}
